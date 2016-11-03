@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -12019,8 +12019,12 @@ Source: http://eshop.phoenixcontact.com .. 1751248.pdf</description>
 <junction x="154.94" y="204.47"/>
 <wire x1="276.86" y1="223.52" x2="154.94" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-1" pin="K"/>
-<wire x1="289.56" y1="149.86" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="149.86" x2="281.94" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="149.86" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="223.52" x2="276.86" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="K$1" pin="NC"/>
+<wire x1="281.94" y1="142.24" x2="281.94" y2="149.86" width="0.1524" layer="91"/>
+<junction x="281.94" y="149.86"/>
 </segment>
 </net>
 <net name="N$5" class="0">
