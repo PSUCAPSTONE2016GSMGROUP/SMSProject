@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -18028,6 +18028,78 @@ Grid 5.00 mm&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO41-10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="2.032" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.064" y2="0" width="0.762" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="A" x="5.08" y="0" drill="1.1176"/>
+<pad name="C" x="-5.08" y="0" drill="1.1176"/>
+<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-2.794" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-1.27" x2="-1.143" y2="1.27" layer="21"/>
+<rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N4004" prefix="D">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+general purpose rectifier, 1 A</description>
+<gates>
+<gate name="1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DO41-10">
+<connects>
+<connect gate="1" pin="A" pad="A"/>
+<connect gate="1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18062,20 +18134,21 @@ Grid 5.00 mm&lt;p&gt;
 <part name="C6" library="rcl" deviceset="C-EU" device="C0603" value="22p"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="DOORSTRIKE" library="con-wago-500" deviceset="W237-102" device=""/>
+<part name="DRSTRIKE" library="con-wago-500" deviceset="W237-102" device=""/>
 <part name="R2" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="10u"/>
 <part name="C5" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="10u"/>
 <part name="LED3" library="led" deviceset="LED" device="5MM"/>
 <part name="U2" library="MF_IC_Power" deviceset="LM317" device="MDT-TR" value="LM317MDT-TR"/>
+<part name="D1" library="diode" deviceset="1N4004" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="359.41" y="7.62" size="3.81" layer="97" font="vector">1</text>
-<text x="422.91" y="7.62" size="3.81" layer="97" font="vector">8</text>
 <text x="347.98" y="27.94" size="3.81" layer="97" font="vector">GSM SENSOR GROUP</text>
+<text x="419.1" y="7.62" size="1.778" layer="91">9</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="236.22" y="157.48" smashed="yes">
@@ -18141,19 +18214,23 @@ Grid 5.00 mm&lt;p&gt;
 </instance>
 <instance part="GND10" gate="1" x="203.2" y="101.6"/>
 <instance part="GND11" gate="1" x="213.36" y="101.6"/>
-<instance part="DOORSTRIKE" gate="-1" x="292.1" y="137.16" rot="R180"/>
-<instance part="DOORSTRIKE" gate="-2" x="292.1" y="142.24" rot="R180"/>
+<instance part="DRSTRIKE" gate="-1" x="292.1" y="137.16" rot="R180"/>
+<instance part="DRSTRIKE" gate="-2" x="292.1" y="142.24" rot="R180"/>
 <instance part="R2" gate="G$1" x="284.48" y="149.86" smashed="yes">
 <attribute name="NAME" x="283.21" y="152.6286" size="1.778" layer="95"/>
 <attribute name="VALUE" x="283.21" y="146.558" size="1.778" layer="96"/>
 </instance>
-<instance part="GND5" gate="1" x="314.96" y="144.78" smashed="yes">
-<attribute name="VALUE" x="312.42" y="142.24" size="1.778" layer="96"/>
+<instance part="GND5" gate="1" x="309.88" y="142.24" smashed="yes">
+<attribute name="VALUE" x="307.34" y="139.7" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="160.02" y="203.2"/>
 <instance part="C5" gate="G$1" x="187.96" y="203.2"/>
 <instance part="LED3" gate="G$1" x="295.91" y="149.86" rot="R90"/>
 <instance part="U2" gate="G$1" x="170.18" y="205.74"/>
+<instance part="D1" gate="1" x="284.48" y="139.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="279.4" y="138.9126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="133.5786" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -18223,8 +18300,8 @@ Grid 5.00 mm&lt;p&gt;
 <wire x1="213.36" y1="104.14" x2="213.36" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="300.99" y1="149.86" x2="314.96" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="314.96" y1="149.86" x2="314.96" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="300.99" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="149.86" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
@@ -18337,11 +18414,14 @@ Grid 5.00 mm&lt;p&gt;
 <pinref part="SPDT" gate="K$1" pin="NC"/>
 <wire x1="160.02" y1="215.9" x2="276.86" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="276.86" y1="215.9" x2="276.86" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="DOORSTRIKE" gate="-2" pin="KL"/>
-<wire x1="287.02" y1="142.24" x2="276.86" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="DRSTRIKE" gate="-2" pin="KL"/>
+<wire x1="287.02" y1="142.24" x2="284.48" y2="142.24" width="0.1524" layer="91"/>
 <junction x="276.86" y="142.24"/>
 <pinref part="C3" gate="G$1" pin="+"/>
 <pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="D1" gate="1" pin="A"/>
+<wire x1="284.48" y1="142.24" x2="276.86" y2="142.24" width="0.1524" layer="91"/>
+<junction x="284.48" y="142.24"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -18380,8 +18460,11 @@ Grid 5.00 mm&lt;p&gt;
 <net name="N$4" class="0">
 <segment>
 <pinref part="SPDT" gate="K$1" pin="MAIN"/>
-<pinref part="DOORSTRIKE" gate="-1" pin="KL"/>
-<wire x1="287.02" y1="137.16" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="DRSTRIKE" gate="-1" pin="KL"/>
+<wire x1="287.02" y1="137.16" x2="284.48" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="D1" gate="1" pin="C"/>
+<wire x1="284.48" y1="137.16" x2="276.86" y2="137.16" width="0.1524" layer="91"/>
+<junction x="284.48" y="137.16"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -18402,11 +18485,13 @@ Grid 5.00 mm&lt;p&gt;
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,218.44,172.72,U1,VCC,5V,,,"/>
+<approved hash="104,1,218.44,170.18,U1,AVCC,5V,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,1,180.999,168.91,LED2,,,,,"/>
 <approved hash="113,1,261.899,168.609,TX,,,,,"/>
 <approved hash="113,1,261.899,163.927,RX,,,,,"/>
-<approved hash="113,1,296.489,137.16,DOORSTRIKE,,,,,"/>
+<approved hash="113,1,294.686,137.16,DRSTRIKE,,,,,"/>
 <approved hash="113,1,297.18,150.182,LED3,,,,,"/>
 </errors>
 </schematic>
