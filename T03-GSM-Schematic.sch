@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -18166,8 +18166,8 @@ general purpose rectifier, 1 A</description>
 <attribute name="VALUE" x="168.91" y="105.41" size="1.778" layer="96"/>
 </instance>
 <instance part="GND6" gate="1" x="190.5" y="86.36"/>
-<instance part="J1" gate="G$1" x="143.51" y="198.12"/>
-<instance part="GND7" gate="1" x="152.4" y="193.04"/>
+<instance part="J1" gate="G$1" x="144.78" y="198.12"/>
+<instance part="GND7" gate="1" x="152.4" y="215.9" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="R3" gate="G$1" x="190.5" y="177.8" smashed="yes">
@@ -18266,12 +18266,6 @@ general purpose rectifier, 1 A</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="146.05" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="200.66" x2="152.4" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="187.96" y1="198.12" x2="187.96" y2="195.58" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="-"/>
@@ -18301,6 +18295,12 @@ general purpose rectifier, 1 A</description>
 <wire x1="309.88" y1="149.86" x2="309.88" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="LED3" gate="G$1" pin="C"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="152.4" y1="213.36" x2="152.4" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="PWR"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -18404,8 +18404,6 @@ general purpose rectifier, 1 A</description>
 <segment>
 <wire x1="160.02" y1="205.74" x2="167.64" y2="205.74" width="0.1524" layer="91"/>
 <junction x="160.02" y="205.74"/>
-<pinref part="J1" gate="G$1" pin="PWR"/>
-<wire x1="146.05" y1="205.74" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="160.02" y1="205.74" x2="160.02" y2="215.9" width="0.1524" layer="91"/>
 <junction x="160.02" y="205.74"/>
 <pinref part="SPDT" gate="K$1" pin="NC"/>
@@ -18419,6 +18417,10 @@ general purpose rectifier, 1 A</description>
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="284.48" y1="142.24" x2="276.86" y2="142.24" width="0.1524" layer="91"/>
 <junction x="284.48" y="142.24"/>
+<wire x1="157.48" y1="200.66" x2="157.48" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="205.74" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="157.48" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
