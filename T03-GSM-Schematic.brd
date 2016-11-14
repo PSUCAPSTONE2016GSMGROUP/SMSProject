@@ -143,7 +143,7 @@
 <wire x1="-0.0846625" y1="-0.253975" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="33.86328125" y2="0" width="0" layer="20"/>
 <wire x1="33.86328125" y1="0" x2="33.86328125" y2="80.255975" width="0" layer="20"/>
-<wire x1="33.86328125" y1="80.255975" x2="0.33863125" y2="80.255975" width="0" layer="20"/>
+<wire x1="33.86328125" y1="80.255975" x2="0" y2="80.255975" width="0" layer="20"/>
 <rectangle x1="4.7839375" y1="25.186075" x2="5.97011875" y2="25.27065625" layer="21"/>
 <rectangle x1="4.70011875" y1="25.27065625" x2="6.22411875" y2="25.35549375" layer="21"/>
 <rectangle x1="4.61375625" y1="25.35549375" x2="6.47811875" y2="25.440075" layer="21"/>
@@ -313,8 +313,8 @@
 <rectangle x1="9.01811875" y1="36.02349375" x2="9.18575625" y2="36.108075" layer="21"/>
 <text x="8.6351375" y="24.635534375" size="1.27" layer="21" font="vector" rot="R180" align="bottom-center">REV
 1.0</text>
-<text x="13.883946875" y="15.661765625" size="1.778" layer="21">Team #3</text>
-<wire x1="0" y1="0" x2="0.33863125" y2="80.255975" width="0" layer="20"/>
+<text x="13.799290625" y="15.06915625" size="2.032" layer="21">Team #3</text>
+<wire x1="0" y1="0" x2="0" y2="80.255975" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="rcl">
@@ -2242,16 +2242,16 @@ Please make sure your boards conform to these design rules.</description>
 <via x="2.285771875" y="72.97536875" extent="1-16" drill="0.6"/>
 <via x="16.762325" y="68.149853125" extent="1-16" drill="0.6"/>
 <via x="1.86248125" y="60.530615625" extent="1-16" drill="0.6"/>
-<via x="31.15421875" y="56.551678125" extent="1-16" drill="0.6"/>
+<via x="31.323534375" y="56.551678125" extent="1-16" drill="0.6"/>
 <via x="14.645871875" y="60.44595625" extent="1-16" drill="0.6"/>
 <via x="31.323534375" y="49.440390625" extent="1-16" drill="0.6"/>
-<via x="32.170115625" y="30.138321875" extent="1-16" drill="0.6"/>
+<via x="32.08545625" y="30.138321875" extent="1-16" drill="0.6"/>
 <via x="11.17488125" y="31.0695625" extent="1-16" drill="0.6"/>
 <via x="1.6931625" y="27.937209375" extent="1-16" drill="0.6"/>
 <via x="2.2011125" y="44.106928125" extent="1-16" drill="0.6"/>
 <via x="7.44991875" y="6.688" extent="1-16" drill="0.6"/>
 <via x="18.370828125" y="3.217015625" extent="1-16" drill="0.6"/>
-<via x="30.81558125" y="13.037365625" extent="1-16" drill="0.6"/>
+<via x="31.323534375" y="13.037365625" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="N$3">
 <contactref element="R3" pad="1"/>
@@ -2503,9 +2503,9 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
+<approved hash="18,29,0a36e53c2aa5249e"/>
 <approved hash="18,29,50f4ff5c316562ec"/>
 <approved hash="18,29,f9cec52d4b647436"/>
-<approved hash="18,29,0a36e53c2aa5249e"/>
 <approved hash="18,29,b333217a4bd88f3d"/>
 <approved hash="18,29,c9ad4bac37afe302"/>
 <approved hash="18,29,3dbed4449bdb9310"/>
@@ -2517,6 +2517,8 @@ Please make sure your boards conform to these design rules.</description>
 <approved hash="18,29,3bdda5fc568a08cc"/>
 <approved hash="18,29,67f56273737576f3"/>
 <approved hash="18,29,de92c18e1f880094"/>
+<approved hash="18,29,2e567d7cdd7c8e56"/>
+<approved hash="18,29,480c0509c509880c"/>
 <approved hash="18,29,1cf197ce9480f9d6"/>
 <approved hash="18,29,8b7a1886eebe7d42"/>
 <approved hash="18,29,e431e3d579d37e37"/>
