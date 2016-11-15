@@ -1973,10 +1973,10 @@ W = angled&lt;p&gt;
 <wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" rot="R90"/>
 <text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
 <text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
@@ -1997,7 +1997,7 @@ W = angled&lt;p&gt;
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="oshpark-2layer">
+<designrules name="oshpark-2layer *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -2017,9 +2017,9 @@ Please make sure your boards conform to these design rules.</description>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
 <param name="mdViaVia" value="6mil"/>
-<param name="mdSmdPad" value="6mil"/>
-<param name="mdSmdVia" value="6mil"/>
-<param name="mdSmdSmd" value="6mil"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="15mil"/>
@@ -2547,45 +2547,13 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="18,29,0a36e53c2aa5249e"/>
 <approved hash="18,29,50f4ff5c316562ec"/>
+<approved hash="18,29,0a36e53c2aa5249e"/>
 <approved hash="18,29,f9cec52d4b647436"/>
-<approved hash="18,29,b333217a4bd88f3d"/>
 <approved hash="18,29,c9ad4bac37afe302"/>
-<approved hash="18,29,7b83cc4a87fdc913"/>
+<approved hash="18,29,b333217a4bd88f3d"/>
 <approved hash="18,29,3dbed4449bdb9310"/>
-<approved hash="18,29,f6600b89df8d2264"/>
-<approved hash="18,29,2119b8f06cf5f51c"/>
-<approved hash="18,29,52bb77e337e312bb"/>
-<approved hash="18,29,5a6e6e342e341a6e"/>
-<approved hash="18,29,de92c18e1f880094"/>
-<approved hash="18,29,ec654b52890e3c12"/>
-<approved hash="18,29,6f31e6ce3f83ce12"/>
-<approved hash="18,29,b7da1dbac44f7b23"/>
-<approved hash="18,29,060fc4e6ec496a28"/>
-<approved hash="18,29,300ffc2e9a14159a"/>
-<approved hash="18,29,513dd0e30453fde3"/>
-<approved hash="18,29,b8711ec2c4d977b8"/>
-<approved hash="18,29,f1824ad2881e2025"/>
-<approved hash="18,29,6f94e6183c7bd1cd"/>
-<approved hash="18,29,0ab4c710ef1166e3"/>
-<approved hash="18,29,2deafd1c9a46085f"/>
-<approved hash="18,29,5eecd31308dfe11a"/>
-<approved hash="18,29,895fe65a3c8a2ba5"/>
-<approved hash="18,29,5e1c1cd6c6ce9274"/>
-<approved hash="18,29,0b3354da963fdb25"/>
-<approved hash="18,29,efc5c61aedb88393"/>
-<approved hash="18,29,c8f9fc869a5ded55"/>
-<approved hash="18,29,b8ebd20708e21a24"/>
-<approved hash="18,29,432b1ce6c65c8f03"/>
-<approved hash="18,29,18584c528effc87e"/>
-<approved hash="18,29,93dae6083cda391e"/>
-<approved hash="18,29,c454fb589d23e120"/>
-<approved hash="18,29,f3a2c7f8ec989fd4"/>
-<approved hash="18,29,a582d3970f5e095d"/>
-<approved hash="18,29,1cf197ce9480f9d6"/>
-<approved hash="18,29,8b7a1886eebe7d42"/>
-<approved hash="18,29,b6d96552d586dfff"/>
+<approved hash="18,29,7b83cc4a87fdc913"/>
 <approved hash="18,29,492dddcd32095ab4"/>
 <approved hash="18,29,ef027f72af76c35b"/>
 </errors>
