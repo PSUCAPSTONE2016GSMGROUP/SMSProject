@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17380,54 +17380,6 @@ Mating wall wart : TOL-00298 (and others)</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="wirepad">
-<description>&lt;b&gt;Single Pads&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="2,54/0,9">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<wire x1="-1.27" y1="1.27" x2="-0.762" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.762" x2="1.27" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-0.762" y1="-1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="-0.762" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.635" width="0.1524" layer="51"/>
-<pad name="1" x="0" y="0" drill="0.9144" diameter="2.54" shape="octagon"/>
-<text x="-1.27" y="1.524" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="0" y="0.6" size="0.0254" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PAD">
-<wire x1="-1.016" y1="1.016" x2="1.016" y2="-1.016" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="-1.016" x2="1.016" y2="1.016" width="0.254" layer="94"/>
-<text x="-1.143" y="1.8542" size="1.778" layer="95">&gt;NAME</text>
-<text x="-1.143" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2,54/0,9" prefix="PAD" uservalue="yes">
-<description>&lt;b&gt;THROUGH-HOLE PAD&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="2,54/0,9">
-<connects>
-<connect gate="1" pin="P" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SparkFun-Electromechanical">
 <description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
 In this library you'll find anything that moves- switches, relays, buttons, potentiometers. Also, anything that goes on a board but isn't electrical in nature- screws, standoffs, etc.&lt;br&gt;&lt;br&gt;
@@ -18172,6 +18124,101 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="con-lstb">
+<description>&lt;b&gt;Pin Headers&lt;/b&gt;&lt;p&gt;
+Naming:&lt;p&gt;
+MA = male&lt;p&gt;
+# contacts - # rows&lt;p&gt;
+W = angled&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="MA04-1">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
+<text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="5.334" y="-0.635" size="1.27" layer="21" ratio="10">4</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MA04-1">
+<wire x1="3.81" y1="-7.62" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="-1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-7.62" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<text x="-1.27" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="3" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MA04-1" prefix="SV" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="MA04-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MA04-1">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+<connect gate="1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -18195,8 +18242,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
 <part name="LED2" library="led" deviceset="LED" device="SML0603"/>
-<part name="TX" library="wirepad" deviceset="2,54/0,9" device=""/>
-<part name="RX" library="wirepad" deviceset="2,54/0,9" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="SPDT" library="SparkFun-Electromechanical" deviceset="RELAY" device="PTH4"/>
@@ -18214,6 +18259,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="D1" library="diode" deviceset="1N4004" device=""/>
 <part name="J2" library="pinhead" deviceset="PINHD-2X3" device="" value="AVR"/>
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="8" value="788TV"/>
+<part name="SV1" library="con-lstb" deviceset="MA04-1" device="" value="GSM-header"/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18254,14 +18301,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <attribute name="NAME" x="181.102" y="169.926" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="191.135" y="165.608" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="TX" gate="1" x="264.16" y="167.64" smashed="yes" rot="R180">
-<attribute name="NAME" x="265.303" y="170.8658" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="265.303" y="170.942" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="RX" gate="1" x="264.16" y="165.1" smashed="yes" rot="R180">
-<attribute name="NAME" x="265.303" y="163.2458" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="265.303" y="168.402" size="1.778" layer="96" rot="R180"/>
-</instance>
 <instance part="GND8" gate="1" x="259.08" y="124.46"/>
 <instance part="GND9" gate="1" x="276.86" y="124.46"/>
 <instance part="SPDT" gate="K$1" x="269.24" y="137.16" smashed="yes">
@@ -18300,6 +18339,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 </instance>
 <instance part="J2" gate="A" x="154.94" y="162.56"/>
 <instance part="IC1" gate="A1" x="175.26" y="205.74"/>
+<instance part="SV1" gate="1" x="269.24" y="167.64" rot="R180"/>
+<instance part="GND12" gate="1" x="261.62" y="182.88" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -18374,6 +18415,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="152.4" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="PWR"/>
 </segment>
+<segment>
+<pinref part="SV1" gate="1" pin="1"/>
+<wire x1="261.62" y1="172.72" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -18423,7 +18469,8 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <net name="5V" class="0">
 <segment>
 <wire x1="187.96" y1="205.74" x2="195.58" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="205.74" x2="195.58" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="205.74" x2="195.58" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="193.04" x2="195.58" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="185.42" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="170.18" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
 <junction x="195.58" y="177.8"/>
@@ -18449,20 +18496,25 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="J2" gate="A" pin="2"/>
 <pinref part="IC1" gate="A1" pin="VO"/>
 <wire x1="185.42" y1="205.74" x2="187.96" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="2"/>
+<wire x1="256.54" y1="193.04" x2="256.54" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="170.18" x2="261.62" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="193.04" x2="195.58" y2="193.04" width="0.1524" layer="91"/>
+<junction x="195.58" y="193.04"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="TX" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PD2"/>
-<pinref part="TX" gate="1" pin="P"/>
 <wire x1="261.62" y1="167.64" x2="254" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="3"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="RX" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="PD3"/>
-<pinref part="RX" gate="1" pin="P"/>
 <wire x1="261.62" y1="165.1" x2="254" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="1" pin="4"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -18560,8 +18612,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <approved hash="104,1,218.44,170.18,U1,AVCC,5V,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
 <approved hash="113,1,180.999,168.91,LED2,,,,,"/>
-<approved hash="113,1,261.899,168.609,TX,,,,,"/>
-<approved hash="113,1,261.899,163.927,RX,,,,,"/>
 <approved hash="113,1,294.686,137.16,DRSTRIKE,,,,,"/>
 <approved hash="113,1,297.18,150.182,LED3,,,,,"/>
 </errors>
