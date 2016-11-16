@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18160,10 +18160,10 @@ W = angled&lt;p&gt;
 <wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" rot="R90"/>
 <text x="-5.08" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-6.223" y="-0.635" size="1.27" layer="21" ratio="10">1</text>
 <text x="0.635" y="1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
@@ -18613,8 +18613,8 @@ W = angled&lt;p&gt;
 <approved hash="104,1,218.44,172.72,U1,VCC,5V,,,"/>
 <approved hash="104,1,218.44,170.18,U1,AVCC,5V,,,"/>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
-<approved hash="113,1,180.999,168.91,LED2,,,,,"/>
-<approved hash="113,1,294.686,137.16,DRSTRIKE,,,,,"/>
+<approved hash="113,1,180.63,168.91,LED2,,,,,"/>
+<approved hash="113,1,295.61,137.16,DRSTRIKE,,,,,"/>
 <approved hash="113,1,297.18,150.182,LED3,,,,,"/>
 </errors>
 </schematic>
