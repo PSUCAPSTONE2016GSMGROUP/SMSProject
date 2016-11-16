@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18340,7 +18340,7 @@ W = angled&lt;p&gt;
 <instance part="J2" gate="A" x="154.94" y="162.56"/>
 <instance part="IC1" gate="A1" x="175.26" y="205.74"/>
 <instance part="SV1" gate="1" x="269.24" y="167.64" rot="R180"/>
-<instance part="GND12" gate="1" x="261.62" y="182.88" rot="R180"/>
+<instance part="GND12" gate="1" x="271.78" y="182.88"/>
 </instances>
 <busses>
 </busses>
@@ -18417,8 +18417,9 @@ W = angled&lt;p&gt;
 </segment>
 <segment>
 <pinref part="SV1" gate="1" pin="1"/>
-<wire x1="261.62" y1="172.72" x2="261.62" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="172.72" x2="261.62" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="261.62" y1="185.42" x2="271.78" y2="185.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
