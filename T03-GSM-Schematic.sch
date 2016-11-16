@@ -18308,6 +18308,8 @@ W = angled&lt;p&gt;
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
 <part name="R4" library="rcl" deviceset="R-US_" device="0204/5" value="0"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="R5" library="rcl" deviceset="R-US_" device="0204/5" value="0"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18414,6 +18416,11 @@ W = angled&lt;p&gt;
 <attribute name="VALUE" x="258.572" y="114.3" size="1.778" layer="96"/>
 </instance>
 <instance part="GND13" gate="1" x="256.54" y="101.6"/>
+<instance part="R5" gate="G$1" x="200.66" y="203.2" smashed="yes" rot="R180">
+<attribute name="NAME" x="199.6186" y="199.39" size="1.778" layer="95"/>
+<attribute name="VALUE" x="200.152" y="205.74" size="1.778" layer="96"/>
+</instance>
+<instance part="GND14" gate="1" x="214.63" y="200.66"/>
 </instances>
 <busses>
 </busses>
@@ -18500,6 +18507,11 @@ W = angled&lt;p&gt;
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="256.54" y1="110.49" x2="256.54" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="214.63" y1="203.2" x2="205.74" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -18669,7 +18681,8 @@ W = angled&lt;p&gt;
 <net name="+5V" class="0">
 <segment>
 <wire x1="187.96" y1="205.74" x2="195.58" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="205.74" x2="195.58" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="205.74" x2="195.58" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="203.2" x2="195.58" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="193.04" x2="195.58" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="185.42" x2="195.58" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="170.18" x2="195.58" y2="172.72" width="0.1524" layer="91"/>
@@ -18699,6 +18712,8 @@ W = angled&lt;p&gt;
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="185.42" y1="209.55" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
 <junction x="185.42" y="205.74"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<junction x="195.58" y="203.2"/>
 </segment>
 </net>
 <net name="N$12" class="0">
