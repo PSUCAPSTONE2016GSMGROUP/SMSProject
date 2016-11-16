@@ -18237,7 +18237,6 @@ W = angled&lt;p&gt;
 <part name="S1" library="SparkFun-Retired" deviceset="TAC_SWITCH" device="SMD" value="TAC_SWITCHSMD"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="POWER_JACK" device="PTH_BREAD" value="POWER_JACKPTH_BREAD"/>
-<part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_B_L" device=""/>
 <part name="R3" library="rcl" deviceset="R-US_" device="R0603" value="220"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R0603" value="10k"/>
@@ -18261,13 +18260,14 @@ W = angled&lt;p&gt;
 <part name="IC1" library="linear" deviceset="78*" device="TV" technology="8" value="788TV"/>
 <part name="SV1" library="con-lstb" deviceset="MA04-1" device="" value="GSM-header"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND7" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="359.41" y="7.62" size="3.81" layer="97" font="vector">1</text>
 <text x="347.98" y="27.94" size="3.81" layer="97" font="vector">GSM SENSOR GROUP</text>
-<text x="419.1" y="7.62" size="1.778" layer="91">9</text>
+<text x="416.56" y="7.62" size="1.778" layer="91">10</text>
 </plain>
 <instances>
 <instance part="U1" gate="A" x="236.22" y="157.48" smashed="yes">
@@ -18286,7 +18286,6 @@ W = angled&lt;p&gt;
 </instance>
 <instance part="GND6" gate="1" x="190.5" y="86.36"/>
 <instance part="J1" gate="G$1" x="144.78" y="198.12"/>
-<instance part="GND7" gate="1" x="152.4" y="215.9" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="325.12" y="0"/>
 <instance part="R3" gate="G$1" x="190.5" y="177.8" smashed="yes">
@@ -18341,6 +18340,7 @@ W = angled&lt;p&gt;
 <instance part="IC1" gate="A1" x="175.26" y="205.74"/>
 <instance part="SV1" gate="1" x="269.24" y="167.64" rot="R180"/>
 <instance part="GND12" gate="1" x="271.78" y="182.88"/>
+<instance part="GND7" gate="1" x="152.4" y="195.58"/>
 </instances>
 <busses>
 </busses>
@@ -18410,16 +18410,16 @@ W = angled&lt;p&gt;
 <pinref part="LED3" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="152.4" y1="213.36" x2="152.4" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="PWR"/>
-</segment>
-<segment>
 <pinref part="SV1" gate="1" pin="1"/>
 <wire x1="261.62" y1="172.72" x2="261.62" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="261.62" y1="185.42" x2="271.78" y2="185.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="147.32" y1="200.66" x2="152.4" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="200.66" x2="152.4" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -18541,11 +18541,12 @@ W = angled&lt;p&gt;
 <pinref part="D1" gate="1" pin="A"/>
 <wire x1="284.48" y1="142.24" x2="276.86" y2="142.24" width="0.1524" layer="91"/>
 <junction x="284.48" y="142.24"/>
-<wire x1="157.48" y1="200.66" x2="157.48" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="157.48" y1="205.74" x2="160.02" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="157.48" y1="200.66" x2="147.32" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="A1" pin="VI"/>
+<wire x1="152.4" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="PWR"/>
+<wire x1="160.02" y1="205.74" x2="147.32" y2="205.74" width="0.1524" layer="91"/>
+<junction x="147.32" y="205.74"/>
 </segment>
 </net>
 <net name="N$16" class="0">
