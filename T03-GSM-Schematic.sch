@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="2" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -18301,8 +18301,8 @@ W = angled&lt;p&gt;
 <part name="SV1" library="con-lstb" deviceset="MA04-1" device="" value="GSM-header"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="100n"/>
-<part name="C4" library="rcl" deviceset="CPOL-EU" device="E5-10.5" value="100n"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="D2" library="diode" deviceset="1N4004" device=""/>
 <part name="P+1" library="supply1" deviceset="+12V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -18622,14 +18622,14 @@ W = angled&lt;p&gt;
 <wire x1="215.9" y1="165.1" x2="215.9" y2="170.18" width="0.1524" layer="91"/>
 <junction x="215.9" y="170.18"/>
 <wire x1="215.9" y1="170.18" x2="208.28" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="-"/>
+<pinref part="C2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="VCC"/>
 <wire x1="218.44" y1="172.72" x2="215.9" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="C4" gate="G$1" pin="-"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -18686,8 +18686,8 @@ W = angled&lt;p&gt;
 <wire x1="256.54" y1="170.18" x2="261.62" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="193.04" x2="195.58" y2="193.04" width="0.1524" layer="91"/>
 <junction x="195.58" y="193.04"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-<pinref part="C4" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="185.42" y1="209.55" x2="185.42" y2="205.74" width="0.1524" layer="91"/>
 <junction x="185.42" y="205.74"/>
@@ -18698,8 +18698,8 @@ W = angled&lt;p&gt;
 </sheets>
 <errors>
 <approved hash="113,1,215.796,139.596,FRAME1,,,,,"/>
-<approved hash="113,1,180.999,168.91,LED2,,,,,"/>
-<approved hash="113,1,294.686,137.16,DRSTRIKE,,,,,"/>
+<approved hash="113,1,180.63,168.91,LED2,,,,,"/>
+<approved hash="113,1,295.61,137.16,DRSTRIKE,,,,,"/>
 <approved hash="113,1,297.18,150.182,LED3,,,,,"/>
 </errors>
 </schematic>
